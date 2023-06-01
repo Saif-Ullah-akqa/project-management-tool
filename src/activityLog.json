@@ -1,0 +1,32 @@
+[
+    {
+        "timestamp": "2021-05-01T12:00:00Z",
+        "workflowNode": "Start",
+        "log": "Main Workflow started"
+    },
+    {
+        "timestamp": "2021-05-01T12:01:00Z",
+        "workflowNode": "Create Requirements",
+        "log": "Create Requirements step completed"
+    },
+    {
+        "timestamp": "2021-05-01T12:02:00Z",
+        "workflowNode": "Create Design",
+        "log": "Create Design step completed"
+    },
+    {
+        "timestamp": "2021-05-01T12:03:00Z",
+        "workflowNode": "Write Code",
+        "log": "Write Code step completed"
+    },
+    {
+        "timestamp": "2021-05-01T12:04:00Z",
+        "workflowNode": "Test and Validate",
+        "log": "Test and Validate step completed"
+    },
+    {
+        "timestamp": "2021-05-01T12:05:00Z",
+        "workflowNode": "End",
+        "log": "Main Workflow completed"
+    }
+]

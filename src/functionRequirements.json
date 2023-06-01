@@ -1,0 +1,7 @@
+[
+    "The user should be able to create a new contact. A contact should contain the following information: First Name, Last Name, Email, Phone, Address, Company Name, Job Title, Notes",
+    "The user should be able to edit an existing contact",
+    "The user should be able to delete an existing contact",
+    "The user should be able to search for a contact by First Name, Last Name, Email, Phone, Address, Company Name, Job Title, Notes",
+    "The user should be able to view a list of all contacts"
+]

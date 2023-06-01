@@ -1,6 +1,7 @@
 import React from 'react';
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import NavLink from '../Link/Link';
 
 const GroupAccordion = ({ title, accordions }) => {
   return (
@@ -10,16 +11,20 @@ const GroupAccordion = ({ title, accordions }) => {
       </AccordionSummary>
       <AccordionDetails>
         <div>
-          {accordions.map((accordion, index) => (
+          {accordions.map((accordion, index) => {
+          console.log(accordion,index);
+          return(
             <Accordion key={index}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography>{accordion.title}</Typography>
+                <Typography>{`User Story ${index+1}`}</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>{accordion.content}</Typography>
+                <NavLink route={`UserStory/${accordion.id}/Requirements`} name='Requirements'></NavLink>
+                <NavLink route={`UserStory/${accordion.id}/Tasks`} name='Tasks'></NavLink>
+                <NavLink route={`UserStory/${accordion.id}/Output`} name='Output'></NavLink>
               </AccordionDetails>
             </Accordion>
-          ))}
+          )})}
         </div>
       </AccordionDetails>
     </Accordion>

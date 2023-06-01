@@ -1,0 +1,7 @@
+{
+    "name": "Build #137",
+    "environment": "QA",
+    "branch": "main",
+    "releaseVersion": "1.2.2",
+    "deploymentURL": "my-app-rel-1-2-2.vercel.app"
+}

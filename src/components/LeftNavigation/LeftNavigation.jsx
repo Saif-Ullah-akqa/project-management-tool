@@ -2,8 +2,9 @@ import { Box } from "@mui/material";
 import Dropdown from "@/components/DropDown/Dropdown";
 import allProduct from "../../allProduct.json";
 import NavLink from "@/components/Link/Link";
+import productDetails from "../../productDetails.json";
 import GroupAccordion from "@/components/GroupedAccordian/GroupAccordian";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { IdContext } from '../../IdContext'; // Import the IdContext
 
 const LeftNavigation = () => {
@@ -12,7 +13,7 @@ const LeftNavigation = () => {
     ProductDetails: 'ProductDetails',
     Workflows: 'Workflows',
     ActivityLog: 'ActivityLogs',
-    BuildDeployement: 'Build/deployments'
+    BuildDeployement: 'BuildDeployments'
   };
 
   const accordions = [
@@ -34,7 +35,7 @@ const LeftNavigation = () => {
         <NavLink name={'Product Details'} route={routes.ProductDetails} />
         <NavLink sx={{ marginTop: 2 }} name={'Work Flow(s)'} route={routes.Workflows} />
         <NavLink styles={{ marginTop: 2 }} name={'Activity Log'} route={routes.ActivityLog} />
-        <GroupAccordion sx={{ marginTop: 2 }} title={"User Stories"} accordions={accordions} />
+        <GroupAccordion sx={{ marginTop: 2 }} title={"User Stories"} accordions={productDetails.userStories} />
         <NavLink sx={{ marginTop: 2 }} name={'Build & Deployments'} route={routes.BuildDeployement} />
       </Box>
     </Box>

@@ -1,0 +1,20 @@
+
+[
+    { 
+        "name": "contact form",
+        "description": "Create a wireframe for the contact form",
+        "outputLinks": [
+            { "name": "Wireframe", "url": "https://www.figma.com/file1" },
+            { "name": "User Journey", "url": "https://www.figma.com/file2" }
+        ]
+    },
+    { 
+        "name": "contact list",
+        "description": "Create a wireframe for the contact list",
+        "outputLinks": [
+            { "name": "Wireframe", "url": "https://www.figma.com/file1" },
+            { "name": "User Journey", "url": "https://www.figma.com/file2" }
+        ]
+    }
+]
+

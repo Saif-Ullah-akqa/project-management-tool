@@ -1,0 +1,4 @@
+[
+    "The system should be able to handle 1000 concurrent users",
+    "The system should complete all user actions - like create / update / delete / search - within 1 second"
+]

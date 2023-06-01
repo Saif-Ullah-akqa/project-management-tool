@@ -1,0 +1,5 @@
+[
+    "Access Control - The details of a contact should be visible only to the user who created it",
+    "Versioning - The details of a contact should be versioned, so that we can track who updated it and when",
+    "Encryption - The details of a contact should be encrypted in the database"
+]

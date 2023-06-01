@@ -5,7 +5,6 @@ import React from "react";
 const Header = () => {
   return (
     <Paper
-      elevation={20}
       variant="outlined"
       sx={{
         padding: 5,

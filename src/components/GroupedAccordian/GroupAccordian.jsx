@@ -12,7 +12,6 @@ const GroupAccordion = ({ title, accordions }) => {
       <AccordionDetails>
         <div>
           {accordions.map((accordion, index) => {
-          console.log(accordion,index);
           return(
             <Accordion key={index}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>

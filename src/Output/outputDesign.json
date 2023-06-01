@@ -1,0 +1,16 @@
+{
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam ni. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam ni",
+
+    "wireframeSpecs": [
+        "```===Order Capture Form===\n# Order Capture Form\n\n## Customer Information\nFull Name: ___\nEmail: @___\n\nPhone: #___\n[>Submit Order<]\n\n===```",
+
+        "```===Order Capture Form===\n# Order Capture Form\n\n## Customer Information\nFull Name: ___\nEmail: @___\n\nPhone: #___\n[>Submit Order<]\n\n===```"
+    ],
+    
+    "userJourneySpecs": [
+        "journey\n    title Customer's Journey to Place an Order\n    section Product Selection\n      Select product: 4: Customer\n    section Place an Order\n      Place an order for a product: 3: Customer\n    section Payment\n      Make a payment: 3: Customer, Payment System\n    section Order Confirmation\n      Receive order confirmation: 5: Customer",
+
+        "journey\n    title Customer's Journey to Place an Order\n    section Product Selection\n      Select product: 4: Customer\n    section Place an Order\n      Place an order for a product: 3: Customer\n    section Payment\n      Make a payment: 3: Customer, Payment System\n    section Order Confirmation\n      Receive order confirmation: 5: Customer"
+    
+    ]
+}

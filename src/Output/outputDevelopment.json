@@ -1,0 +1,64 @@
+[
+    {
+        "pullRequestURL": "Pull Request 1",
+	    "gitCommits": [
+            {
+                "commitIdentifier": "Commit Id 1",
+                "files": [
+                    {
+                        "path": "/path/to/filename",
+                        "fileContent": "class HelloWorld{\npublic static void main(String[] args){\nSystem.out.println(\"Hello World\");\n}\n}"
+                    },
+                    {
+                        "path": "/path/to/filename",
+                        "fileContent": "class HelloWorld{\npublic static void main(String[] args){\nSystem.out.println(\"Hello World\");\n}\n}"
+                    }
+                ]
+            },
+            {
+                "commitIdentifier": "Commit Id 2",
+                "files": [
+                    {
+                        "path": "/path/to/filename",
+                        "fileContent": "class HelloWorld{\npublic static void main(String[] args){\nSystem.out.println(\"Hello World\");\n}\n}"
+                    },
+                    {
+                        "path": "/path/to/filename",
+                        "fileContent": "class HelloWorld{\npublic static void main(String[] args){\nSystem.out.println(\"Hello World\");\n}\n}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "pullRequestURL": "Pull Request 2",
+	    "gitCommits": [
+            {
+                "commitIdentifier": "Commit Id 3",
+                "files": [
+                    {
+                        "path": "/path/to/filename",
+                        "fileContent": "class HelloWorld{\npublic static void main(String[] args){\nSystem.out.println(\"Hello World\");\n}\n}"
+                    },
+                    {
+                        "path": "/path/to/filename",
+                        "fileContent": "class HelloWorld{\npublic static void main(String[] args){\nSystem.out.println(\"Hello World\");\n}\n}"
+                    }
+                ]
+            },
+            {
+                "commitIdentifier": "Commit Id 4",
+                "files": [
+                    {
+                        "path": "/path/to/filename",
+                        "fileContent": "class HelloWorld{\npublic static void main(String[] args){\nSystem.out.println(\"Hello World\");\n}\n}"
+                    },
+                    {
+                        "path": "/path/to/filename",
+                        "fileContent": "class HelloWorld{\npublic static void main(String[] args){\nSystem.out.println(\"Hello World\");\n}\n}"
+                    }
+                ]
+            }
+        ]
+    }
+]

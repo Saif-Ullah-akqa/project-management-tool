@@ -1,7 +1,7 @@
 "use client";
 import "./globals.css";
 import styles from "./page.module.css";
-import { IdProvider } from "../IdContext"; // Import the IdProvider
+import { IdProvider } from "../IdContext";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import LeftNavigation from "@/components/LeftNavigation/LeftNavigation";
@@ -19,9 +19,7 @@ export default function RootLayout({ children }) {
         <IdProvider>
           <main className={styles.main}>
             <LeftNavigation />
-            <Box sx={{flex:1}}>
-            {children}
-            </Box>
+            <Box sx={{ flex: 1 }}>{children}</Box>
           </main>
         </IdProvider>
       </body>

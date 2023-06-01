@@ -1,0 +1,52 @@
+{
+    "testCases": [
+        {
+            "scenario": "Scenario: Successful order creation",
+            "steps": [
+                "Given I am a logged-in customer",
+                "And I have selected products to purchase",
+                "When I proceed to checkout",
+                "And I enter valid shipping and payment information",
+                "And I click on the 'Place Order' button",
+                "Then I should see a confirmation message",
+                "And I should receive an email with the order details",
+                "But the order status should be Pending"
+            ]
+        },
+        {
+            "scenario": "Scenario: Failed order creation due to invalid payment information",
+            "steps": [
+                "Given I am a logged-in customer",
+                "And I have selected products to purchase",
+                "When I proceed to checkout",
+                "And I enter invalid payment information",
+                "And I click on the 'Place Order' button",
+                "Then I should see an error message",
+                "And the order status should be Failed"
+            ]
+        }
+    ],
+    "testReports": [
+        {
+            "testStatus": "Failed",
+            "defects": [
+                {
+                    "id": 1,
+                    "title": "Defect 1",
+                    "type": "Functional",
+                    "severity": "Blocker",
+                    "expectedBehaviour": "We were expecting this behaviour...",
+                    "actualBehaviour": "We got this as actual behaviour...",
+                    "linkedTestCase": "Scenario - Create Order - Happy Path",
+                    "deployment": {
+                        "name": "Build #137",
+                        "environment": "QA",
+                        "branch": "main",
+                        "releaseVersion": "1.2.2",
+                        "deploymentURL": "my-app-rel-1-2-2.vercel.app"
+                    }
+                }
+            ]
+        }
+    ]
+}

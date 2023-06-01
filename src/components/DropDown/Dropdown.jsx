@@ -17,7 +17,6 @@ const Dropdown = ({ dropdownValues, handleId }) => {
     // Pass the id of the selected product to the parent component
     handleId(selectedProduct.id);
   };
-  console.log(dropdownValues);
   return (
     <FormControl sx={{ width: 200 }} fullWidth>
       <InputLabel id="demo-simple-select-label">Select Product Name</InputLabel>

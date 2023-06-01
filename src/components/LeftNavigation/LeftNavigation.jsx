@@ -5,7 +5,7 @@ import NavLink from "@/components/Link/Link";
 import productDetails from "../../productDetails.json";
 import GroupAccordion from "@/components/GroupedAccordian/GroupAccordian";
 import React, { useContext } from "react";
-import { IdContext } from '../../IdContext'; // Import the IdContext
+import { IdContext } from '../../IdContext';
 
 const LeftNavigation = () => {
   const { id, setContextId } = useContext(IdContext); // Use the IdContext
@@ -16,17 +16,10 @@ const LeftNavigation = () => {
     BuildDeployement: 'BuildDeployments'
   };
 
-  const accordions = [
-    { title: "Accordion 1", content: "Content 1" },
-    { title: "Accordion 2", content: "Content 2" },
-    { title: "Accordion 3", content: "Content 3" },
-  ];
-
   const handleId = (productId) => {
     setContextId(productId);
   };
 
-  console.log(id);
 
   return (
     <Box sx={{ width: 1 / 4, display: 'flex', flexDirection: 'column', padding: 3, borderRight: '1px solid black' }} >

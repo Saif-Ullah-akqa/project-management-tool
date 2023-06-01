@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Main Workflow",
+        "workflowState": "Completed",
+        "nodeGraphMarkdown": "mermaid\\ngraph LR\\nA[\"Create Requirements\"] --> B[\"Create Design\"]\\nB --> C[\"Write Code\"]\\nC --> D[\"Test and Validate\"]\\nD --> E[End]\\n"
+    },
+    {
+        "id": 2,
+        "name": "Subworkflow - Test and Validate",
+        "workflowState": "Completed",
+        "nodeGraphMarkdown": "mermaid\\ngraph LR\\nA[\"Write Test Case\"] --> B[\"Do Functional Testing\"]\\nB --> C[\"Do Visual Testing\"]\\nC --> D[\"Raise Defects If Any\"]\\nD --> E[End]\\n"
+    }
+]

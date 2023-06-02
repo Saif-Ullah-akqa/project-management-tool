@@ -5,7 +5,7 @@ import NavLink from '../Link/Link';
 
 const GroupAccordion = ({ title, accordions }) => {
   return (
-    <Accordion>
+    <Accordion sx={{backgroundColor:'transparent',marginTop: 3, }}>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <Typography>{title}</Typography>
       </AccordionSummary>
@@ -13,11 +13,11 @@ const GroupAccordion = ({ title, accordions }) => {
         <div>
           {accordions.map((accordion, index) => {
           return(
-            <Accordion key={index}>
+            <Accordion key={index} sx={{backgroundColor:'transparent'}}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography>{`User Story ${index+1}`}</Typography>
+                <Typography>{`User Story ${accordion.id}`}</Typography>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails >
                 <NavLink route={`UserStory/${accordion.id}/Requirements`} name='Requirements'></NavLink>
                 <NavLink route={`UserStory/${accordion.id}/Tasks`} name='Tasks'></NavLink>
                 <NavLink route={`UserStory/${accordion.id}/Output`} name='Output'></NavLink>

@@ -6,13 +6,12 @@ const BuildDeployment = () => {
   return (
     <Box
       sx={{
-        marginLeft: 5,
-        marginTop: 5,
+        margin: 5,
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <Typography variant="h3">{'Build & Deployments'}</Typography>
+      <Typography variant="h4">{'Build & Deployments'}</Typography>
       <Box sx={{ marginLeft: 2, display: "flex", flexDirection: "column" }}>
         <Box sx={{ display: "flex",padding:2 }}>
           <Typography>Name:</Typography>

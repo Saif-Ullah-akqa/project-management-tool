@@ -4,10 +4,9 @@ import { Box } from "@mui/system";
 
 const NavLink = ({ route, name, styles }) => {
   return (
-    <Box>
+    <Box sx={{marginTop:3}}>
       <Link
         underline="none"
-        variant="button"
         color={"black"}
         sx={styles}
         href={`/${route}`}

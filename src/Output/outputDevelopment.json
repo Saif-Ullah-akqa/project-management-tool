@@ -1,6 +1,6 @@
 [
     {
-        "pullRequestURL": "Pull Request 1",
+        "pullRequestURL": "github.com/repo-name/branch-name/pr123",
 	    "gitCommits": [
             {
                 "commitIdentifier": "Commit Id 1",
@@ -31,7 +31,7 @@
         ]
     },
     {
-        "pullRequestURL": "Pull Request 2",
+        "pullRequestURL": "github.com/repo-name/branch-name/pr432",
 	    "gitCommits": [
             {
                 "commitIdentifier": "Commit Id 3",

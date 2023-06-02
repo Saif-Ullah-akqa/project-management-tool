@@ -15,16 +15,15 @@ const ActivityLogs = () => {
   return (
     <Box
       sx={{
-        marginLeft: 5,
-        marginTop: 5,
+        margin: 5,
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <Typography variant="h3">Activity Logs</Typography>
+      <Typography variant="h4">Activity Logs</Typography>
       <TableContainer component={Paper} sx={{ marginTop: 2 }}>
         <Table>
-          <TableHead>
+          <TableHead sx={{backgroundColor:'gray'}}>
             <TableRow>
               <TableCell>Timestamps</TableCell>
               <TableCell>Workflows</TableCell>
@@ -33,7 +32,7 @@ const ActivityLogs = () => {
           </TableHead>
           <TableBody>
             {activityLog.map((logEntry, index) => (
-              <TableRow key={index}>
+              <TableRow key={index} style ={ index % 2? { background : "lightgray" }:{ background : "white" }}>
                 <TableCell>{logEntry.timestamp}</TableCell>
                 <TableCell>{logEntry.workflowNode}</TableCell>
                 <TableCell>{logEntry.log}</TableCell>

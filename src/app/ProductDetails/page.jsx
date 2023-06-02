@@ -1,5 +1,5 @@
 "use client";
-import { Box, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
 import React from "react";
 import productDetails from "../../productDetails.json";
 
@@ -7,26 +7,46 @@ const ProductDetailsPage = () => {
   return (
     <Box
       sx={{
-        marginLeft: 5,
-        marginTop: 5,
+        margin: 5,
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <Typography variant="h3">Product Details</Typography>
-      <Box sx={{ marginLeft: 2, display: "flex", flexDirection: "column" }}>
-        <Box sx={{ display: "flex",padding:5 }}>
-          <Typography>Name:</Typography>
-          <Typography variant="body1" sx={{marginLeft:2}}>{productDetails.name}</Typography>
-        </Box>
-        <Box sx={{ display: "flex",padding:5 }}>
-        <Typography>Description:</Typography>
-          <Typography variant="body1" sx={{marginLeft:2}}>{productDetails.description}</Typography>
-        </Box>
-        <Box sx={{ display: "flex",padding:5 }}>
-        <Typography>Git Repository:</Typography>
-          <Typography variant="body1" sx={{marginLeft:2}}>{productDetails.gitRepository}</Typography>
-        </Box>
+      <Typography variant="h4">Product Details</Typography>
+      <Box
+        sx={{
+          margin: 2,
+          display: "grid",
+          gridTemplateRows: "repeat(4)",
+          gridTemplateColumns: "repeat(8, 1fr)",
+          rowGap:'30px',
+          columnGap:'20px'
+        }}
+      >
+        <Typography sx={{ textAlign: "right", gridColumn: "span 1" }}>
+          Name:
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            gridColumnStart: "2",
+          }}
+        >
+          {productDetails.name}
+        </Typography>
+        <Typography
+          sx={{ textAlign: "right", gridRow: "2", gridColumn: "span 1" }}
+        >
+          Description:
+        </Typography>
+        <Typography variant="body1" sx={{ gridRow: "2",gridColumnEnd:"8", gridColumnStart: "2" }}>
+          {productDetails.description}
+        </Typography>
+
+        <Typography  sx={{ textAlign: "right", gridRow: "3", gridColumn: "span 1" }}>Git Repo:</Typography>
+        <Link underline="none" href={productDetails.gitRepository} variant="body1" sx={{gridRow: "3",gridColumnEnd:"8", gridColumnStart: "2" }}>
+          {productDetails.gitRepository}
+        </Link>
       </Box>
     </Box>
   );

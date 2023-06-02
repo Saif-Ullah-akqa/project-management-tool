@@ -7,17 +7,17 @@ const Header = () => {
     <Paper
       variant="outlined"
       sx={{
-        padding: 5,
         display: "flex",
-        justifyContent: "space-between",
-        backgroundColor: "lightgray",
+        alignItems:'center',
+        backgroundColor:'#ededed',
+        padding:'15px'
       }}
     >
-      <HomeIcon sx={{ width: 50, height: 50 }} />
+      <HomeIcon sx={{ width: 30, height: 30 }} />
       <Typography
-        variant="h1"
+        variant="h6"
         align="right"
-        sx={{ marginLeft: 5, fontSize: "50px", fontFamily: "monospace" }}
+        sx={{ marginLeft: '35px'}}
       >
         Project Management
       </Typography>

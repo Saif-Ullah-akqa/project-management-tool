@@ -16,9 +16,13 @@ import outputDesign from "../../../../Output/outputDesign.json";
 import outputDevelopment from "../../../../Output/outputDevelopment.json";
 import Paper from "@mui/material/Paper";
 import outputTesting from "../../../../Output/outputTesting.json";
+import { useParams } from "next/navigation";
+import { tabStyle } from "@/components/shared/styles";
 
 const OutPut = () => {
   const [value, setValue] = useState("0");
+  const param = useParams();
+  const userStoryId = param.userStoryId;
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -26,58 +30,26 @@ const OutPut = () => {
   return (
     <Box
       sx={{
-        marginRight: 5,
-        marginLeft: 5,
-        marginTop: 5,
+        margin: 5,
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <Typography variant="h3">User Story | Output</Typography>
+      <Typography variant="h4">{`User Story ${userStoryId}| Output`}</Typography>
       <Box sx={{ width: "100%", marginTop: 3 }}>
         <TabContext value={value}>
-          <Box>
+          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <TabList
               onChange={handleChange}
               value={value}
               aria-label="basic tabs example"
             >
-              <Tab
-                label="Design"
-                value="0"
-                sx={{
-                  borderColor: "black",
-                  border: "2px",
-                  borderStyle: "solid",
-                }}
-              />
-              <Tab
-                label="Development"
-                value="1"
-                sx={{
-                  borderColor: "black",
-                  border: "2px",
-                  borderStyle: "solid",
-                  borderLeft: "none",
-                }}
-              />
-              <Tab
-                label="Testing"
-                value="2"
-                sx={{
-                  borderColor: "black",
-                  border: "2px",
-                  borderStyle: "solid",
-                  borderLeft: "none",
-                }}
-              />
+              <Tab label="Design" value="0" sx={tabStyle} />
+              <Tab label="Development" value="1" sx={tabStyle} />
+              <Tab label="Testing" value="2" sx={tabStyle} />
             </TabList>
           </Box>
-          <TabPanel
-            value="0"
-            index="0"
-            sx={{ borderColor: "black", border: "2px", borderStyle: "solid" }}
-          >
+          <TabPanel value="0" index="0">
             {
               <Box>
                 <Box sx={{ display: "flex" }}>
@@ -109,17 +81,17 @@ const OutPut = () => {
               </Box>
             }
           </TabPanel>
-          <TabPanel
-            value="1"
-            index="1"
-            sx={{ borderColor: "black", border: "2px", borderStyle: "solid" }}
-          >
+          <TabPanel value="1" index="1">
             {outputDevelopment.map((item, index) => {
               return (
                 <Box key={index}>
-                  <Typography variant="h5" sx={{ marginTop: 3 }}>
-                    {item.pullRequestURL}
-                  </Typography>
+                  <Box>
+                    <Typography variant="h5" sx={{ marginTop: 3 }}>
+                      {`Pull Request # ${index + 1}`}
+                      <Typography>{item.pullRequestURL}</Typography>
+                    </Typography>
+                  </Box>
+
                   {item.gitCommits.map((commit, idx) => {
                     return (
                       <Box sx={{ marginTop: 5 }} key={idx}>
@@ -156,11 +128,7 @@ const OutPut = () => {
               );
             })}
           </TabPanel>
-          <TabPanel
-            value="2"
-            index="2"
-            sx={{ borderColor: "black", border: "2px", borderStyle: "solid" }}
-          >
+          <TabPanel value="2" index="2">
             <Box>
               <Box>
                 <Typography variant="h5">Test Cases</Typography>

@@ -40,6 +40,16 @@ const OutPut = () => {
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <TabList
+             TabProps={{
+                sx: {
+                  "&.Mui-selected": {
+                    color: "black", // Set the desired color for the focused state
+                  },
+                },
+              }}
+              TabIndicatorProps={{
+                style: { color: "black", backgroundColor: "black" },
+              }}
               onChange={handleChange}
               value={value}
               aria-label="basic tabs example"

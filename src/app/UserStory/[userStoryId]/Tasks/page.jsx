@@ -36,7 +36,7 @@ const Tasks = () => {
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <TabList
-             TabProps={{
+              TabProps={{
                 sx: {
                   "&.Mui-selected": {
                     color: "black", // Set the desired color for the focused state
@@ -50,31 +50,18 @@ const Tasks = () => {
               value={value}
               aria-label="basic tabs example"
             >
-              <Tab
-                label="Design"
-                value="0"
-                sx={tabStyle}
-              />
-              <Tab
-                label="Development"
-                value="1"
-                sx={tabStyle}
-              />
-              <Tab
-                label="Testing"
-                value="2"
-                sx={tabStyle}
-              />
+              <Tab label="Design" value="0" sx={tabStyle} />
+              <Tab label="Development" value="1" sx={tabStyle} />
+              <Tab label="Testing" value="2" sx={tabStyle} />
             </TabList>
           </Box>
-          <TabPanel
-            value="0"
-            index="0"
-            
-          >
-            <TableContainer component={Paper} sx={{ marginTop: 2,backgroundColor:'transparent' }}>
+          <TabPanel value="0" index="0">
+            <TableContainer
+              component={Paper}
+              sx={{ marginTop: 2, backgroundColor: "transparent" }}
+            >
               <Table>
-                <TableHead>
+                <TableHead sx={{ backgroundColor: "lightgray" }}>
                   <TableRow>
                     <TableCell>Name</TableCell>
                     <TableCell>Description</TableCell>
@@ -103,12 +90,11 @@ const Tasks = () => {
               </Table>
             </TableContainer>
           </TabPanel>
-          <TabPanel
-            value="1"
-            index="1"
-            
-          >
-            <TableContainer component={Paper} sx={{ marginTop: 2 ,backgroundColor:'transparent'}}>
+          <TabPanel value="1" index="1">
+            <TableContainer
+              component={Paper}
+              sx={{ marginTop: 2, backgroundColor: "transparent" }}
+            >
               <Table>
                 <TableHead>
                   <TableRow>
@@ -139,12 +125,11 @@ const Tasks = () => {
               </Table>
             </TableContainer>
           </TabPanel>
-          <TabPanel
-            value="2"
-            index="2"
-            
-          >
-            <TableContainer component={Paper} sx={{ marginTop: 2,backgroundColor:'transparent' }}>
+          <TabPanel value="2" index="2">
+            <TableContainer
+              component={Paper}
+              sx={{ marginTop: 2, backgroundColor: "transparent" }}
+            >
               <Table>
                 <TableHead>
                   <TableRow>

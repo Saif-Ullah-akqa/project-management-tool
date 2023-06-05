@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <IdProvider>
           <main className={styles.main}>
             <LeftNavigation  />
-            <Box sx={{ flex: 1 ,backgroundColor:'#eaeaea' }}>{children}</Box>
+            <Box sx={{ flex: 1 }}>{children}</Box>
           </main>
         </IdProvider>
       </body>

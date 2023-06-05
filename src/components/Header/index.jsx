@@ -1,7 +1,7 @@
-import { Paper, Typography } from "@mui/material";
+import { Paper, ThemeProvider, Typography } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import React from "react";
-
+import { headingFont } from "../shared/styles";
 const Header = () => {
   return (
     <Paper
@@ -13,14 +13,16 @@ const Header = () => {
         padding:'15px'
       }}
     >
-      <HomeIcon sx={{ width: 30, height: 30 }} />
+      <HomeIcon sx={{ width: 40, height: 40 }} />
+      <ThemeProvider theme={headingFont}>
       <Typography
-        variant="h6"
+        variant="h4"
         align="right"
-        sx={{ marginLeft: '35px'}}
+        sx={{ marginLeft: '35px',fontWeight:500}}
       >
         Project Management
       </Typography>
+      </ThemeProvider>
     </Paper>
   );
 };

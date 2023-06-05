@@ -4,11 +4,17 @@ import { Box } from "@mui/system";
 
 const NavLink = ({ route, name, styles }) => {
   return (
-    <Box sx={{marginTop:3}}>
+    <Box sx={{ marginTop: 3 }}>
       <Link
+        fontFamily={"roboto"}
         underline="none"
         color={"black"}
-        sx={styles}
+        sx={{
+          "&:hover": {
+            borderBottom: "1px solid #000",
+          },
+          marginTop: "10px",
+        }}
         href={`/${route}`}
       >
         {name}

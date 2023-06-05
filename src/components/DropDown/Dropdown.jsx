@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Select from "@mui/material/Select";
 import { FormControl, InputLabel, MenuItem } from "@mui/material";
 
-const TIMEOUT_DURATION = 1 * 60 * 1000; // 15 minutes in milliseconds
+const TIMEOUT_DURATION = 30 * 60 * 1000; // 30 minutes in milliseconds
 
 const Dropdown = ({ dropdownValues, handleId }) => {
   const [productName, setProductname] = useState("");

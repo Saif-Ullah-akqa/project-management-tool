@@ -8,6 +8,7 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  ThemeProvider,
   Typography,
 } from "@mui/material";
 import { TabContext, TabPanel, TabList } from "@mui/lab";
@@ -17,6 +18,7 @@ import outputDevelopment from "../../../../Output/outputDevelopment.json";
 import Paper from "@mui/material/Paper";
 import outputTesting from "../../../../Output/outputTesting.json";
 import { useParams } from "next/navigation";
+import { bodyFont } from "@/components/shared/styles";
 import { tabStyle } from "@/components/shared/styles";
 
 const OutPut = () => {
@@ -28,6 +30,7 @@ const OutPut = () => {
     setValue(newValue);
   };
   return (
+    <ThemeProvider theme={bodyFont}>
     <Box
       sx={{
         margin: 5,
@@ -35,7 +38,7 @@ const OutPut = () => {
         flexDirection: "column",
       }}
     >
-      <Typography variant="h4">{`User Story ${userStoryId}| Output`}</Typography>
+      <Typography variant="h4">{`User Story ${userStoryId} | Output`}</Typography>
       <Box sx={{ width: "100%", marginTop: 3 }}>
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -367,6 +370,7 @@ const OutPut = () => {
         </TabContext>
       </Box>
     </Box>
+    </ThemeProvider>
   );
 };
 

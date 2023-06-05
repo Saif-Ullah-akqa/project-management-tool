@@ -31,7 +31,7 @@ const Tasks = () => {
         flexDirection: "column",
       }}
     >
-      <Typography variant="h4">{`User Story ${userStoryId}| Tasks`}</Typography>
+      <Typography variant="h4">{`User Story ${userStoryId} | Tasks`}</Typography>
       <Box sx={{ width: "100%", marginTop: 3 }}>
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>

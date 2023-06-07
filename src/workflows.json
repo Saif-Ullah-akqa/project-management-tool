@@ -3,12 +3,12 @@
         "id": 1,
         "name": "Main Workflow",
         "workflowState": "Completed",
-        "nodeGraphMarkdown": "mermaid\\ngraph LR\\nA[\"Create Requirements\"] --> B[\"Create Design\"]\\nB --> C[\"Write Code\"]\\nC --> D[\"Test and Validate\"]\\nD --> E[End]\\n"
+        "nodeGraphMarkdown": "graph LR;A[Create Requirements] --> B[Create Design];B --> C[Write Code];C --> D[Test and Validate];D --> E[End];"
     },
     {
         "id": 2,
         "name": "Subworkflow - Test and Validate",
         "workflowState": "Completed",
-        "nodeGraphMarkdown": "mermaid\\ngraph LR\\nA[\"Write Test Case\"] --> B[\"Do Functional Testing\"]\\nB --> C[\"Do Visual Testing\"]\\nC --> D[\"Raise Defects If Any\"]\\nD --> E[End]\\n"
+        "nodeGraphMarkdown": "graph LR;A[Write Test Case] --> B[Do Functional Testing];B --> C[Do Visual Testing];C --> D[Raise Defects If Any];D --> E[End];"
     }
 ]

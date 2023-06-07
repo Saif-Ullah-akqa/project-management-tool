@@ -23,7 +23,7 @@ const Workflow = () => {
         flexDirection: "column",
       }}
     >
-      <Typography variant="h4" fontSize={'1rem'}>Workflow(s)</Typography>
+      <Typography variant="h4">Workflow(s)</Typography>
 
       {workflows.map((workflow, idx) => {
         return (

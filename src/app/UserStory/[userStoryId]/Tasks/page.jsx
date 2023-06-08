@@ -96,7 +96,7 @@ const Tasks = () => {
               sx={{ marginTop: 2, backgroundColor: "transparent" }}
             >
               <Table>
-                <TableHead>
+                <TableHead sx={{ backgroundColor: "lightgray" }}>
                   <TableRow>
                     <TableCell>Name</TableCell>
                     <TableCell>Description</TableCell>
@@ -131,7 +131,7 @@ const Tasks = () => {
               sx={{ marginTop: 2, backgroundColor: "transparent" }}
             >
               <Table>
-                <TableHead>
+                <TableHead sx={{ backgroundColor: "lightgray" }}>
                   <TableRow>
                     <TableCell>Name</TableCell>
                     <TableCell>Description</TableCell>

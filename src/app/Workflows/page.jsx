@@ -28,7 +28,7 @@ const Workflow = () => {
           <Box
             sx={{
               marginLeft: 2,
-              marginTop: "3rem",
+              marginTop: 2,
               display: "flex",
               flexDirection: "column",
             }}

@@ -1,11 +1,10 @@
-import { Paper, ThemeProvider, Typography } from "@mui/material";
+import { Box, ThemeProvider, Typography } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import React from "react";
 import { headingFont } from "../shared/styles";
 const Header = () => {
   return (
-    <Paper
-      variant="outlined"
+    <Box
       sx={{
         display: "flex",
         alignItems:'center',
@@ -23,7 +22,7 @@ const Header = () => {
         Project Management
       </Typography>
       </ThemeProvider>
-    </Paper>
+    </Box>
   );
 };
 

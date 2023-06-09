@@ -2,9 +2,9 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam ni. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam ni",
 
     "wireframeSpecs": [
-        "```===Order Capture Form===\n# Order Capture Form\n\n## Customer Information\nFull Name: ___\nEmail: @___\n\nPhone: #___\n[>Submit Order<]\n\n===```",
+        "===Order Capture Form===\n# Order Capture Form\n\n## Customer Information\nFull Name: ___\nEmail: @___\n\nPhone: #___\n[>Submit Order<]\n\n===",
 
-        "```===Order Capture Form===\n# Order Capture Form\n\n## Customer Information\nFull Name: ___\nEmail: @___\n\nPhone: #___\n[>Submit Order<]\n\n===```"
+        "===Order Capture Form===\n# Order Capture Form\n\n## Customer Information\nFull Name: ___\nEmail: @___\n\nPhone: #___\n[>Submit Order<]\n\n==="
     ],
     
     "userJourneySpecs": [

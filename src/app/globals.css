@@ -21,3 +21,8 @@ body {
 div[data-processed="true"] {
   opacity: 100;
 }
+.icontent{
+  height:800px;
+  width:80%;
+  margin: 5px 0px 0px 80px;
+}

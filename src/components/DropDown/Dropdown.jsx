@@ -45,7 +45,7 @@ const Dropdown = ({ dropdownValues, handleId }) => {
   };
 
   return (
-    <FormControl sx={{ width: 250 ,marginTop:3}} fullWidth>
+    <FormControl sx={{ width: '90%' ,marginTop:3}} fullWidth>
       <InputLabel id="demo-simple-select-label">Select Product Name</InputLabel>
       <Select
         value={productName}
